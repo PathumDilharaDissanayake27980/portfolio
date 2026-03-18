@@ -1,0 +1,268 @@
+%-------------------------
+% Resume in Latex
+% Author: Pathum Dilhara Dissanayake
+% License: MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Pathum Dilhara Dissanayake} % Your Name
+\newcommand{\course}{BSc Engineering (Hons) Computer Engineering} % Your Program
+\newcommand{\phone}{0710758542} % Your Phone Number
+\newcommand{\emaila}{pathumdilharadissanayake@gmail.com} %Email 1
+\newcommand{\location}{1041/B, Stage 2, Anuradhapura}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+\parbox{\dimexpr\linewidth-0.2cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +94 \phone}\\
+  {University of Peradeniya, Sri Lanka} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  \course &  \href{https://github.com/PathumDilharaDissanayake}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+  {\location} & \href{https://www.linkedin.com/in/pathum-dissanayaka-60364817a/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}
+\end{tabularx}
+}
+
+%-----------PROFILE SUMMARY-----------------
+\section{\textbf{Profile}}
+An enthusiastic Computer Engineering undergraduate at the University of Peradeniya with a strong foundation in software development, embedded systems, networking, and AI-driven solutions. Experienced in building intelligent systems, such as a heart failure prediction model and a real-time smart canteen management system. Currently exploring next-generation wireless technologies through research on Wi-Fi 7 security. Dedicated to creating practical, data-driven solutions that improve everyday efficiency and security.
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Peradeniya}{Current GPA: 3.79/4.00}
+      {BSc Engineering (Hons) Computer Engineering}{2022 - 2026}
+    \resumeSubheading
+      {Central College, Anuradhapura}{3 A's}
+      {G.C.E. Advanced Level}{2020}
+    \resumeSubheading
+      {Central College, Anuradhapura}{9 A's}
+      {G.C.E. Ordinary Level}{2017}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Peradeniya}{Peradeniya, Sri Lanka}
+      {Casual Instructor}{2023 - 2024}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Delivered engaging lectures and practical sessions for computer engineering courses, ensuring key concepts were effectively communicated.}
+    \item {Enhanced student understanding and performance by utilizing innovative teaching methodologies and providing hands-on guidance.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Security Testing and Threat Prediction of MLOs in Wi-Fi 7} %Project Name
+      {Final Year Project (FYP)} %Project Type
+      {2025 - 2026} %Dates
+
+      \resumeItemListStart
+        \item {Investigating the "Backoff" mechanism's behavior in different counter states to understand protocol vulnerabilities.}
+        \item {Identifying potential threat surfaces in Multi-Link Operations (MLO) and developing mitigation strategies for Wi-Fi 7 security.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+      {Smart Canteen Management System} %Project Name
+      {Third Year Project - Embedded Systems} %Project Type
+      {2024 - 2025} %Dates
+
+      \resumeItemListStart
+        \item {Tools \& Technologies: Embedded systems, Camera integration, RFID/Card payment systems.}
+        \item {Designed a system with an E-menu, camera-based crowd monitoring, and cashless payment integration.}
+        \item {Enabled real-time monitoring of canteen congestion to improve operational efficiency.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      {Heart Patient Management System} %Project Name
+      {Second Year Project - Machine Learning} %Project Type
+      {2023 - 2024} %Dates
+
+      \resumeItemListStart
+        \item {Tools \& Technologies: Python, Machine Learning algorithms, SQL.}
+        \item {Developed a cardiac patient database management system integrated with an ML model to assess the probability of heart failure.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+    \resumeProject
+      {Stock Market Prediction System} %Project Name
+      {Neural Networks Course Project} %Project Type
+      {2024} %Dates
+
+      \resumeItemListStart
+        \item {Tools \& Technologies: Python, Neural Networks, TensorFlow.}
+        \item {Built a neural network-based system to analyze historical data and predict future stock market behavior.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+
+    \resumeProject
+      {Weather Effect Removal from Images} %Project Name
+      {Computer Vision Course Project} %Project Type
+      {2024} %Dates
+
+      \resumeItemListStart
+        \item {Tools \& Technologies: Python, OpenCV, Computer Vision.}
+        \item {Implemented computer vision techniques to remove diverse weather effects from images, significantly improving output quality.}
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Python, JavaScript, SQL, C++} \\
+     \textbf{Frameworks}{: React, Flutter, Spring Boot, Spring MVC, Spring Cloud, Microservices} \\
+     \textbf{Developer Tools}{: Git, VS Code, IntelliJ IDEA, PyCharm, Android Studio} \\
+     \textbf{Cloud/Databases}{: MySQL, PostgreSQL, MongoDB} \\
+     \textbf{Spoken Languages}{: Sinhalese (Native), English (Fluent), Hindi (Conversational)} \\
+     \textbf{Soft Skills}{: Leadership, Communication, Teamwork, Adaptability, Creativity, Problem-solving} \\
+     \textbf{Areas of Interest}{: Wireless Security, AI/ML, Embedded Systems, Software Development, Computer Vision} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Volunteer, } % Position
+    {Arunella} %Club
+    {Jan 2023 - May 2024} %Tenure
+\resumePOR{Volunteer, } % Position
+    {EngEx 2025 Exhibition} %Club
+    {2025} %Tenure
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-------------------------------------------
+\end{document}
