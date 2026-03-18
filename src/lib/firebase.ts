@@ -7,13 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCOnZwzVfyrtuNBBHlc2KVnhUqcXjOyT3Q",
-  authDomain: "pathum-dissanayake.firebaseapp.com",
-  projectId: "pathum-dissanayake",
-  storageBucket: "pathum-dissanayake.firebasestorage.app",
-  messagingSenderId: "652817215742",
-  appId: "1:652817215742:web:d3bb6e77d6e35e01b635af",
-  measurementId: "G-X279HEX81B"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
