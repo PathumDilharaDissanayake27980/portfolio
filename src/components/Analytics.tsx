@@ -41,7 +41,7 @@ export default function Analytics() {
           <ul>
             {Object.entries(analytics).map(([path, count]) => (
               <li key={path}>
-                <strong>{path}:</strong> {count}
+                <strong>{path}:</strong> {String(count)}
               </li>
             ))}
           </ul>
