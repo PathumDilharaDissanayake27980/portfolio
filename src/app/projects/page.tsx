@@ -35,7 +35,7 @@ export default function ProjectsPage() {
     fetchProjects();
   }, []);
 
-  const categories = ["all", ...new Set(projects.map((p) => p.category))];
+  const categories = ["all", ...Array.from(new Set(projects.map((p) => p.category)))];
 
   const filteredProjects =
     filter === "all"
