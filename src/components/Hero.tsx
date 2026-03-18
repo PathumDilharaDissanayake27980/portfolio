@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl text-center text-muted-foreground mb-8"
         >
-          I'm a passionate web developer creating modern and responsive
+          I&apos;m a passionate web developer creating modern and responsive
           websites.
         </motion.p>
         <motion.div

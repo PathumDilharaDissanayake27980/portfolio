@@ -54,7 +54,7 @@ export default function AboutPage() {
             <CardContent>
               <p>Central College, Anuradhapura</p>
               <p>2020</p>
-              <p>3 A's</p>
+              <p>3 A&apos;s</p>
             </CardContent>
           </Card>
           <Card>
@@ -64,7 +64,7 @@ export default function AboutPage() {
             <CardContent>
               <p>Central College, Anuradhapura</p>
               <p>2017</p>
-              <p>9 A's</p>
+              <p>9 A&apos;s</p>
             </CardContent>
           </Card>
         </div>

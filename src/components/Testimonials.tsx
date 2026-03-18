@@ -60,7 +60,7 @@ export default function Testimonials() {
                         </AvatarFallback>
                       </Avatar>
                       <p className="text-center text-muted-foreground mb-4">
-                        "{testimonial.quote}"
+                        &ldquo;{testimonial.quote}&rdquo;
                       </p>
                       <h3 className="font-bold">{testimonial.name}</h3>
                       <p className="text-sm text-muted-foreground">

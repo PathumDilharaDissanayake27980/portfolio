@@ -22,7 +22,7 @@ export default function ContactPage() {
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="text-muted-foreground text-lg mt-2">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
         </p>
 
         <div className="flex justify-center gap-8 mt-8">
