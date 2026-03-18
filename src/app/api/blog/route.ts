@@ -1,7 +1,7 @@
 import { db } from "@/lib/firebase";
 import { addDoc, collection, getDocs, orderBy, query } from "firebase/firestore";
 import { getServerSession } from "next-auth";
-import { authOptions } from "../auth/[...nextauth]/route";
+import { authOptions } from "@/lib/authOptions";
 
 export async function POST(request: Request) {
   const session = await getServerSession(authOptions);
