@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import Image from "next/image";
 import {
   MapPin,
   GraduationCap,
@@ -285,16 +286,19 @@ export default function AboutSection() {
                   }}
                 />
 
-                {/* Dark inset ring */}
                 <div className="absolute -inset-1 rounded-full bg-[#080C18]" />
 
-                {/* Avatar circle */}
-                <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-blue-600 via-violet-600 to-cyan-600 flex items-center justify-center shadow-2xl shadow-blue-500/30">
-                  <span className="font-archivo font-black text-7xl text-white tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-white via-blue-100 to-cyan-200">
-                    PD
-                  </span>
+                <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-blue-600 via-violet-600 to-cyan-600 p-2 shadow-2xl shadow-blue-500/30">
+                  <div className="w-full h-full rounded-full overflow-hidden relative">
+                    <Image
+                      src="/pathum.png"
+                      alt="Avatar"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
                 </div>
-
                 {/* Online status dot */}
                 <div className="absolute bottom-4 right-4 w-6 h-6 rounded-full bg-green-400 border-2 border-[#080C18] shadow-lg shadow-green-400/60">
                   <span className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-75" />
